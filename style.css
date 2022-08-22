@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+.container_fluid {
+  width: 100%;
+  padding: 0 16px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menu-toggle {
+  display: block;
+  padding: 10px;
+  margin: 20px 0 0;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+header {
+  min-height: 80px;
+  background: white;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu-toggle {
+  display: none;
+}
+.logo > img {
+  width: 150px;
+}
+header nav a {
+  padding: 0 12px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background: blue;
+  color: white;
+  max-height: max-content;
+}
+.top {
+  min-height: 360px;
+  background: rgb(214, 207, 207);
+}
+
+.top {
+  display: flex;
+}
+.top .row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  width: 43%;
+}
+.box2 {
+  width: 55%;
+  min-height: 250px;
+}
+
+#carouselExampleCaptions {
+  width: 100%;
+}
+
+.bottom {
+
+    display: flex;
+  padding: 64px;
+}
+
+
+.box{
+    padding: 0 16px;
+width: 33%;
+}
+
+.box img{
+    width: 100%;
+}
+
+footer {
+  min-height: 80px;
+  background: rgb(48, 46, 46);
+}
+footer .row3{
+align-items: center;
+padding: 15px 0;
+
+}
+
+.f_1 {
+  color: white;
+}
+.f_2 {
+  color: rgb(75, 73, 73);
+}
+
+.f_2 a {
+  color: rgb(75, 73, 73);
+}
+
+@media (max-width: 768px) {
+  header {
+    min-height: 120px;
+  }
+
+  .logo {
+    position: relative;
+    left: 7em;
+  }
+
+  nav {
+    display: none;
+  }
+  header .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 2.5em;
+    left: 0%;
+    width: 100%;
+  }
+  .top{
+    position: relative;;
+    min-height: 100px
+  }
+
+  .box1 {
+    width: 5vw;
+    text-align: start;
+    margin: 0 auto;
+  }
+  .box1 img{
+    width: 100%;
+  }
+
+  .box2 {
+    display: none;
+  }
+
+
+  .top .row2 {
+    width: 20%;
+  }
+
+  .bottom .box {
+    width: 100%;
+  }
+  /* footer {
+  } */
+  footer .row3{
+    font-size: 80%;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .logo {
+    position: relative;
+    left: 7em;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .box1 {
+    min-height: ;
+    width: 100%;
+  }
+
+  .box2 {
+    display: none;
+  }
+  .top .row2 {
+    width: 100%;
+  }
+
+  .bottom .box {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
